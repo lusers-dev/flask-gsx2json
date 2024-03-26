@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Get Google Sheet in JSON</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+</head>
+<body>
+    <header>
+      <div class="inner">
+        <a href="/">
+          <h1>lusers.dev</h1>
+        </a>
+        <h2></h2>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+
+            <h1 id="content-mainsection">Get Google Sheet in JSON</h1>
+            
+            <br>
+            <form action="./gsx2json" method="get" target="_blank">
+                <input type="text" placeholder="Google Sheet ID" name="gsx_id" required>
+                <br><br>
+                <input type="submit" value="GET SHEET" id="process" style="text-align: center;">
+            </form>
+
+           <object type="text/html" data="/static/gsx2json-project-desc.txt"></object><br><br>
+
+        </section>
+
+        <aside id="sidebar">
+          <p><h2><i>References:</i></h2> 
+            <ul>
+              <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://docker.com/" target="_blank" rel="noopener noreferrer">Docker</a></li>
+              <li><a href="https://python.org/" target="_blank" rel="noopener noreferrer">Python</a></li>
+              <li><a href="https://palletsprojects.com/p/flask/" target="_blank" rel="noopener noreferrer">Flask</a></li>
+           </ul>
+          </p>
+        </aside>
+
+      </div>
+    </div>
+</body>
+</html>
